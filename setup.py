@@ -11,12 +11,10 @@ setup(
         'pathlib',
         'jdata',
         'seaborn',
-        'math',
         'tqdm',
         'time',
         'mpl_toolkits',
-        'skimage',
-        'pathlib'
+        'skimage'
     ],
     author='fnickolay',
     description='Python-based functions for porous media light propagation modelling',
