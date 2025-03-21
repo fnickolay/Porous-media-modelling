@@ -9,7 +9,6 @@ setup(
         'pandas',
         'matplotlib',
         'pathlib',
-        'json',
         'jdata',
         'seaborn',
         'math',
