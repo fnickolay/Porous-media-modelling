@@ -12,7 +12,6 @@ setup(
         'jdata',
         'seaborn',
         'tqdm',
-        'time',
         'mpl_toolkits',
         'skimage'
     ],
