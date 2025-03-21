@@ -354,7 +354,7 @@ def sphere_creator(Rbins, x_deform=1, y_deform=1, z_deform=1):
     ellip_base = ellipsoid(x, y, z, levelset=True)
 
     # Use marching cubes to obtain the surface mesh of these ellipsoids
-    verts, faces, normals, values = measure.marching_cubes_classic(ellip_base, 0)
+    verts, faces, normals, values = measure.marching_cubes_lewiner(ellip_base, 0)
     
     # смещаем к нулям
     def Move_to_zero(v):
