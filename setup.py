@@ -12,7 +12,7 @@ setup(
         'jdata',
         'seaborn',
         'tqdm',
-        'skimage'
+        'scikit-image'
     ],
     author='fnickolay',
     description='Python-based functions for porous media light propagation modelling',
