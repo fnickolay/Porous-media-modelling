@@ -12,7 +12,6 @@ setup(
         'jdata',
         'seaborn',
         'tqdm',
-        'mpl_toolkits',
         'skimage'
     ],
     author='fnickolay',
