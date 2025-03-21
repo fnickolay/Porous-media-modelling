@@ -7,12 +7,10 @@ setup(
     install_requires=[
         'numpy',
         'pandas',
-        'subprocess',
         'matplotlib',
         'pathlib',
         'json',
         'jdata',
-        'sys',
         'seaborn',
         'math',
         'tqdm',
