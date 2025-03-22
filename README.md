@@ -2,6 +2,11 @@
 Python-based code for modelling light propagation in transparent porous media.
 
 ## Usage
+First, download library and import content:
+```
+pip install git+https://github.com/fnickolay/Porous-media-modelling.git
+from library.tool_kit import *
+```
 Set porous media parameters:
 ```
 SVMC_params = {'Rbins' : 10,                             # radius od a single pore
