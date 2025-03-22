@@ -57,6 +57,6 @@ The returning res variable stores the information from the .jnii file, downloade
 See official MCX Extreme documentation for detailed specifications.
 
 ## Acknowledgement
-### This library contains MCX Extreme by Qianqian Fang for it's implementation:
-### URL: https://github.com/fangq/mcx/
-### License: GPL version 3 or later
+This library contains MCX Extreme by Qianqian Fang for it's implementation:
+* URL: https://github.com/fangq/mcx/
+* License: GPL version 3 or later
