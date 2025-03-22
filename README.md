@@ -1,2 +1,46 @@
 # Porous-media-modelling
-Python-based code for modelling light propagation in transparent porous media
+Python-based code for modelling light propagation in transparent porous media.
+
+## Usage
+Set porous media parameters:
+  SVMC_params = {'Rbins' : 10, 
+                 'number_of_bubbles' : num_of_bubbles,
+                 'xyz_proportions' : [1, 1, deform], 
+                 'volume_original_shape' : [600, 600, 600]}
+Set parameters of SVMC-executive file:
+  modelling_params = [
+                      '-B', '______111111',
+                      #'-B', '______100100',
+                      '-H', f'{nphot}',
+                      '-f', 'merged_data_2.json', 
+                      '-w', 'X'
+                     ]
+Set materials properties:
+  materials = [{"mua":0, # outer matter
+                "mus":0,
+                "g":1,
+                "n":1},
+  
+               {"mua":0., # media, index 1
+                "mus":0.0,
+                "g":0.95,
+                "n":1.37},
+  
+               {"mua":0., # pores, index 2
+                "mus":0.,
+                "g":0.95, 
+                "n":1},
+  
+               {"mua":100000, # absorbing layer, index 3
+                "mus":0.0, 
+                "g":0.95, 
+                "n":1.37}
+              ]
+Set modelling iteration ID for it to save properly:
+  _ID = '600_size'
+Get the results of modelling iteration:
+  res, por = SVMC_experiment_iterarion(ID=_ID,
+                                       SVMC_parameters=SVMC_params,
+                                       Modelling_parameters=modelling_params,
+                                       materials=materials, 
+                                       nphotons=nphot)
